@@ -3,8 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBSITE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons@4.29.2/dist/feather.min.js"></script>
+    <title>Website</title>
+    <style>
+        .navbar { background-color: #1e3a8a; padding: 1rem 1.5rem; }
+        .navbar-brand, .nav-link { color: #e0f2fe !important; font-size: 1.2rem; }
+        .navbar-brand { font-weight: bold; margin-right: 2rem; }
+        .nav-link { margin-right: 1rem; }
+        .nav-link:hover { color: #a5f3fc !important; }
+        .card { margin: 1rem 0; border-radius: 15px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); transition: transform 0.3s, box-shadow 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); }
+        .card-img-top { border-top-left-radius: 15px; border-top-right-radius: 15px; }
+        .btn-primary { background-color: #1e3a8a; border: none; display: flex; align-items: center; }
+        .btn-primary:hover { background-color: #2c5282; }
+        .btn-primary i { margin-left: 8px; }
+        .icon { width: 16px; height: 16px; vertical-align: middle; margin-right: 6px; }
+        .card-wrapper { margin-top: 2rem; } /* Add margin for Card 1 and 2 */
+    </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#"><i data-feather="home" class="icon"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i data-feather="box" class="icon"></i>Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i data-feather="info" class="icon"></i>About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i data-feather="more-horizontal" class="icon"></i>More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3 card-wrapper"> 
+                    <div class="card-body">
+                        <h5 class="card-title"> title 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                            deserunt mollit anim id est laborum.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card card-wrapper"> 
+                    <div class="card-body">
+                        <h5 class="card-title"> title 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                            deserunt mollit anim id est laborum.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <img src="/bg-index.jpg" class="card-img-top" alt="Placeholder image">
+                    <div class="card-body">
+                        <h5 class="card-title">Large Card title</h5>
+                        <p class="card-text">This is a larger card with more content to demonstrate how it can occupy a larger space on the screen.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>feather.replace();</script>
 </body>
 </html>
