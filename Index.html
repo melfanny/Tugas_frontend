@@ -20,7 +20,7 @@
         .btn-primary:hover { background-color: #2c5282; }
         .btn-primary i { margin-left: 8px; }
         .icon { width: 16px; height: 16px; vertical-align: middle; margin-right: 6px; }
-        .card-wrapper { margin-top: 2rem; } /* Add margin for Card 1 and 2 */
+        .card-wrapper { margin-top: 3rem; } 
     </style>
 </head>
 <body>
@@ -50,12 +50,28 @@
         </div>
     </nav>
 
+    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100 mt-3">
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000" id="myToast">
+            <div class="toast-header">
+                <!-- Using Feather Icon instead of image -->
+                <i data-feather="bell" class="me-2"></i>
+                <strong class="me-auto">Notification</strong>
+                <small>Just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello Welcome to this Website!!
+            </div>
+        </div>
+    </div>
+
+
     <div class="container my-4">
         <div class="row">
             <div class="col-md-6">
                 <div class="card mb-3 card-wrapper"> 
                     <div class="card-body">
-                        <h5 class="card-title"> title 1</h5>
+                        <h5 class="card-title">Title 1</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
@@ -65,7 +81,7 @@
                 </div>
                 <div class="card card-wrapper"> 
                     <div class="card-body">
-                        <h5 class="card-title"> title 2</h5>
+                        <h5 class="card-title">Title 2</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
@@ -76,9 +92,9 @@
             </div>
             <div class="col-md-6">
                 <div class="card h-100">
-                    <img src="/bg-index.jpg" class="card-img-top" alt="Placeholder image">
+                    <img src="bg-index.jpg" class="card-img-top" alt="Placeholder image">
                     <div class="card-body">
-                        <h5 class="card-title">Large Card title</h5>
+                        <h5 class="card-title">Large Card Title</h5>
                         <p class="card-text">This is a larger card with more content to demonstrate how it can occupy a larger space on the screen.</p>
                         <a href="#" class="btn btn-primary">Go somewhere <i data-feather="arrow-right"></i></a>
                     </div>
@@ -86,6 +102,96 @@
             </div>
         </div>
     </div>
-    <script>feather.replace();</script>
+
+    <!-- Service 3 - Bootstrap Brain Component -->
+<section class="py-5 py-xl-8"> 
+    <div class="container overflow-hidden">
+      <div class="row gy-5 gx-md-4 gy-lg-0 gx-xxl-5 justify-content-center">
+        <div class="col-11 col-sm-6 col-lg-3">
+          <div class="badge bg-primary p-3 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-pie-chart" viewBox="0 0 16 16">
+              <path d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793V1.018zm1 0V7.5h6.482A7.001 7.001 0 0 0 8.5 1.018zM14.982 8.5H8.207l-4.79 4.79A7 7 0 0 0 14.982 8.5zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+            </svg>
+          </div>
+          <h4 class="mb-3">Market Research</h4>
+          <p class="mb-3 text-secondary">Kami dapat membantu Anda memahami pasar target Anda dan mengidentifikasi peluang baru untuk pertumbuhan. 
+            Kami menawarkan berbagai layanan riset pasar, wawancara, dan kelompok diskusi.</p>
+          <a href="#!" class="fw-bold text-decoration-none link-primary">
+            Learn More
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+            </svg>
+          </a>
+        </div>
+        <div class="col-11 col-sm-6 col-lg-3">
+          <div class="badge bg-primary p-3 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-aspect-ratio" viewBox="0 0 16 16">
+              <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5v-9zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
+              <path d="M2 4.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H3v2.5a.5.5 0 0 1-1 0v-3zm12 7a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H13V8.5a.5.5 0 0 1 1 0v3z" />
+            </svg>
+          </div>
+          <h4 class="mb-3">Web Design</h4>
+          <p class="mb-3 text-secondary">Kami dapat membantu Anda membuat situs web yang menarik secara visual dan ramah pengguna. 
+            Kami mempertimbangkan identitas merek dan audiens target Anda saat mendesain situs web Anda.</p>
+          <a href="#!" class="fw-bold text-decoration-none link-primary">
+            Learn More
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+            </svg>
+          </a>
+        </div>
+        <div class="col-11 col-sm-6 col-lg-3">
+          <div class="badge bg-primary p-3 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-airplane-engines" viewBox="0 0 16 16">
+              <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0ZM7 3c0-.432.11-.979.322-1.401C7.542 1.159 7.787 1 8 1c.213 0 .458.158.678.599C8.889 2.02 9 2.569 9 3v4a.5.5 0 0 0 .276.447l5.448 2.724a.5.5 0 0 1 .276.447v.792l-5.418-.903a.5.5 0 0 0-.575.41l-.5 3a.5.5 0 0 0 .14.437l.646.646H6.707l.647-.646a.5.5 0 0 0 .14-.436l-.5-3a.5.5 0 0 0-.576-.411L1 11.41v-.792a.5.5 0 0 1 .276-.447l5.448-2.724A.5.5 0 0 0 7 7V3Z" />
+            </svg>
+          </div>
+          <h4 class="mb-3">SEO Services</h4>
+          <p class="mb-3 text-secondary">Kami dapat membantu Anda meningkatkan visibilitas situs web Anda di halaman hasil mesin pencari (SERP).
+             Ini dapat menghasilkan lebih banyak lalu lintas ke situs web Anda dan meningkatkan konversi.</p>
+          <a href="#!" class="fw-bold text-decoration-none link-primary">
+            Learn More
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+            </svg>
+          </a>
+        </div>
+    </div>
+  </section>
+
+  <!-- About 2 - Bootstrap Brain Component -->
+<section class="py-3 py-md-5">
+    <div class="container">
+        <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+            <div class="col-12 col-lg-4"> <!-- Change to col-lg-4 for smaller image -->
+                <img class="img-fluid rounded" loading="lazy" src="https://raw.githubusercontent.com/username/repository/branch/path/to/bg-about.jpeg" alt="About 2">
+            </div>
+            <div class="col-12 col-lg-8"> <!-- Adjusted to maintain layout -->
+                <div class="row justify-content-xl-center">
+                    <div class="col-12 col-xl-10">
+                        <h2 class="mb-3">About</h2>
+                        <p class="lead fs-4 mb-3 mb-xl-5">Dengan pengalaman bertahun-tahun dan pengetahuan mendalam di industri ini,
+                            kami memiliki rekam jejak kesuksesan yang terbukti dan terus mendorong diri untuk tetap berada di garis depan perkembangan.</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <p class="fs-5 m-0">Let's hire us to reach your objectives.</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn bsb-btn-xl btn-outline-primary rounded-pill">Connect Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script>
+        feather.replace();
+        
+        // Show toast automatically after page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            var toastEl = document.querySelector('.toast');
+            var toast = new bootstrap.Toast(toastEl);
+            toast.show();
+        });
+    </script>
 </body>
 </html>
